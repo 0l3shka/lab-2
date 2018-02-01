@@ -13,6 +13,29 @@ namespace EmployeeApp
         private int empID;
         private float currPay;
 
+        public string Name
+        {
+            get {return empName;}
+            set {
+             if (value.Length > 15)
+                Console.WriteLine("Error! Name must be less than 16 chars!");
+            else
+                empName = value;
+            }
+        }
+
+        public int ID
+        {
+            get { return empID; }
+            set { empID = value; }
+        }
+
+        public float Pay
+        {
+            get { return currPay; }
+            set { currPay = value; }
+        }
+
         public Employee() { }
         public Employee(string name,int id,float pay)
         {
@@ -22,17 +45,7 @@ namespace EmployeeApp
         }
 
         //methods
-        public string GetName()
-        {
-            return empName;
-        }
-        public void SetName(string name)
-        {
-            if (name.Length > 15)
-                Console.WriteLine("Error! Name must be less than 16 chars!");
-            else
-                empName = name;
-        }
+      
         public void GiveBonus(float amount)
         {
             currPay += amount;

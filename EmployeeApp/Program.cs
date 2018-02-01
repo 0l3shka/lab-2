@@ -15,8 +15,8 @@ namespace EmployeeApp
             emp.GiveBonus(1000);
             emp.DisplayStats();
 
-            emp.SetName("Marv");
-            Console.WriteLine("Employee is named: {0}", emp.GetName());
+            emp.Name = "Marv";
+            Console.WriteLine("Employee is named: {0}", emp.Name);
             Console.ReadLine();
         }
     }
