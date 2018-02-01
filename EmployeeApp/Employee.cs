@@ -12,7 +12,12 @@ namespace EmployeeApp
         private string empName;
         private int empID;
         private float currPay;
-
+        private int empAge;
+        public int Age
+        {
+            get { return empAge; }
+            set { empAge = value; }
+        }
         public string Name
         {
             get {return empName;}
@@ -37,24 +42,28 @@ namespace EmployeeApp
         }
 
         public Employee() { }
-        public Employee(string name,int id,float pay)
+        public Employee(string name, int id, float pay)
+            : this(name, 0, id, pay) { }
+        public Employee(string name,int age,int id,float pay)
         {
-            empName = name;
-            empID = id;
-            currPay = pay;
+           Name = name;
+           Age = age;
+           ID = id;
+           Pay = pay;
         }
 
         //methods
       
         public void GiveBonus(float amount)
         {
-            currPay += amount;
+           Pay += amount;
         }
         public void DisplayStats()
         {
-            Console.WriteLine("Name: {0}", empName);
-            Console.WriteLine("ID:{0}", empID);
-            Console.WriteLine("Pay: {0}", currPay);
+            Console.WriteLine("Name: {0}", Name);
+            Console.WriteLine("ID:{0}", ID);
+            Console.WriteLine("Age:{0}", Age);
+            Console.WriteLine("Pay: {0}", Pay);
 
         }
         
