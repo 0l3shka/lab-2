@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoProps", "AutoProps\Auto
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectInitializers", "ObjectInitializers\ObjectInitializers.csproj", "{93E615D4-64DA-48FE-8E8D-F3C2039FA7F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConstData", "ConstData\ConstData.csproj", "{C6DD97A0-A0A7-4998-9939-55E408C80B5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{93E615D4-64DA-48FE-8E8D-F3C2039FA7F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93E615D4-64DA-48FE-8E8D-F3C2039FA7F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93E615D4-64DA-48FE-8E8D-F3C2039FA7F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6DD97A0-A0A7-4998-9939-55E408C80B5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6DD97A0-A0A7-4998-9939-55E408C80B5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6DD97A0-A0A7-4998-9939-55E408C80B5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6DD97A0-A0A7-4998-9939-55E408C80B5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
