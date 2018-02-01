@@ -13,6 +13,12 @@ namespace EmployeeApp
         private int empID;
         private float currPay;
         private int empAge;
+        private string empSSN;
+
+        public string SocialSecurityNumber
+        {
+            get { return empSSN; }
+        }
         public int Age
         {
             get { return empAge; }
@@ -43,13 +49,14 @@ namespace EmployeeApp
 
         public Employee() { }
         public Employee(string name, int id, float pay)
-            : this(name, 0, id, pay) { }
-        public Employee(string name,int age,int id,float pay)
+            : this(name, 0, id, pay,"") { }
+        public Employee(string name,int age,int id,float pay,string ssn)
         {
            Name = name;
            Age = age;
            ID = id;
            Pay = pay;
+            empSSN = ssn;
         }
 
         //methods
